@@ -1,0 +1,13 @@
+// a linear data structure
+// one end closed
+// one end open
+// LIFO - last in first out principle
+
+// operations on stack
+1.push()
+2.pop()
+3.top()
+4.size()
+
+pop() on empty stack - stack underflow error
+push() on full stack - stack overflow error
