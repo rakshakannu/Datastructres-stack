@@ -1,0 +1,45 @@
+// stack can be implemented using array or linked list
+
+// using array
+
+initially: top=-1; // this reference keeps moving in the array to keep track of index
+
+push(x)
+{
+  if(top = capacity -1)
+  { overflow }
+  top++;
+  arr[top]=x;
+}
+
+pop(x)
+{
+  if (top==-1)
+  { underflow }temo
+  res= arr[top];
+  top--;
+  return res;
+}
+
+// using linkedlist.
+// in java there is AUTOMATIC GARBAGE COLLECTION
+
+initially: head = null;
+
+push(x)
+{
+  temp = new Node(x)
+  temp.next=head;
+  head = temp; // changed the head to point to this new node
+}
+
+pop()
+{
+  if(head==null)
+    return;
+  res = head.data;
+  head = head.next; // automatic garbage collection in java
+  return res;
+}
+
+// BOTH ARE O[1] time. infact most of the stack implementation is O[1].
