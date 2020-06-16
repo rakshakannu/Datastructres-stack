@@ -1,0 +1,10 @@
+// applications of stack
+
+1. function calls
+2. checking for balanced paranthesis
+3. reversing items
+4. infix to prefix/postfix
+5. evaluation of prefix/postfix
+6. stock span problem and its variations ( MOST IMP INTERVIEW PROBLEM )
+7. undo/redo or forward/backward ( ASKED IN FACE TO FACE INTERVIEW ) - how to implement undo/redo in MS Word (or) forward/backward in 
+browsers.
