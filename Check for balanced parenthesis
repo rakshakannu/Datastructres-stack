@@ -1,0 +1,25 @@
+// no of opening brackets and corresponding closing brackets should be same and the bracket that was opened latest should be closed first.
+// using stack is the best approach
+// any other data structure will take a lot of time
+
+bool isBalanced(String str)
+{
+  Stack<Integer> s = new Stack<Integer>();
+  for(int i=0;i<s.length();i++)
+  {
+    if(str.charAt(i)=="(" || str.charAt(i)=="{" || str.charAt(i)=="[")
+      s.push(s.charAt(i));
+    else
+    {
+      if( s.isEmpty()==true ) // this is possible when there is a closing bracket int the starting
+        return false;
+        
+      else if(matching(str.charAt(i),s.top())==false) // checking order of closing bracket
+        return false;
+        
+      else
+        s.pop();
+    }
+  }
+  return(s.empty()==true) // checking if stack is empty or has extra opening brackets
+}
