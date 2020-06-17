@@ -1,0 +1,13 @@
+// stack numbers will be 0 to k-1 for k stacks
+
+// naive solution
+// divide the stack into k parts
+// problem - there might occur stack overflow
+
+// better solution
+// tricky solution
+// we use an array of tops to store K tops.
+// we use an additional array called next array.
+// next array serves us two purposes 
+
+( didnt understand solution much )
