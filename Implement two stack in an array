@@ -1,0 +1,54 @@
+// given an array, we need to implement two stacks in it. like for cache friendliness.
+// push1, push2, pop1, pop2, size1, size2
+
+// naive solution
+// divide the array into half and then use it
+// overflow might happen for one stack since size is fixed
+
+//efficient solution
+// the idea is to start both the stack from either ends of the array
+// growing both the stacks inwards from opposite directions
+
+class twoStacks{
+  int[] arr = new Int[];
+  int cap; //capacity
+  int top1,top2;
+  
+  void push1(int x)
+  {
+    if(top1<top2-1) { top1++; arr[top1]=x; }
+  }
+  
+  void push2(int x)
+  {
+    if(top1<top2-1) { top2--; arr[top2]=x; }
+  }
+  
+  int pop1()
+  {
+    if(top1>=0)
+    {
+      int x = arr[top1];
+      top--;
+      return x;
+    }
+    else
+    {
+      exit(1);
+    }
+  }
+  
+  int pop2()
+  {
+    if(top2<cap)
+    {
+      int x = arr[top2];
+      top2++;
+      return x;
+    }
+    else
+    {
+      exit(1);
+    }
+  }
+}
