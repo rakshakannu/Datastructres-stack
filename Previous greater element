@@ -1,0 +1,3 @@
+// given an array of distinct integers, find the closest(position wise), greatest element on the left of it. if there is no greater
+element, print -1.
+
