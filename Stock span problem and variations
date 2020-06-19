@@ -1,0 +1,32 @@
+// span of an element - count of stocks that are smaller or same to that element
+ar - [13,23,45]
+span of 45 = 3
+
+if for that element, if the just left value is greater, then span = 1
+and span of first element in array = 1
+
+if array in increasing order, span = 1,2,3,4,... for respective elements
+if array in decreasing order, span = 1,1,1,1,... for respective elemnets
+
+// naive solution
+// travel to the left of every element with initialising span = 1
+
+for(int i=0;i<n;i++)
+{
+  int span =1;
+  for(int j=i-1; j>=0 ;j--)
+  {
+    if(arr[j]<=arr[i])
+      span++;
+    else
+      break;
+  }
+  
+  System.out.print(Span+" "); // span of all the elements will be printed
+}
+
+// better solution
+// using stacks
+// stacks helps to keep track of recent elements
+
+( didnt understand solution)
